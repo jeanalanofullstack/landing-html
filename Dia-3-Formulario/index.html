@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Usuários</h1>
+        <p>Favor preencher seguintes dados para dar continuidade no processo, obrigado!</p>
+    </header>
+    <main>
+        <!--Cadastro de cliente -->
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset>
+                <legend>Cadastro</legend>
+                
+                <div class="campo">
+                    <label for="nomeUsuario">Nome completo:</label>
+                    <input type="text" name="nome" id="nomeUsuario">
+                </div>
+
+                <div class="campo">
+                    <label for="emailUsuario">Email:</label>
+                    <input type="email" name="email" id="emailUsuario">
+                </div>
+ 
+               <div class="campo">
+                    <label for="senhaUsuario">Senha:</label>
+                    <input type="password" name="senha" id="senhaUsuario">
+                </div>
+                
+                <div class="campo">
+                   <label for="generoUsuaruio">Genero:</label>
+                    <label for="generoUsuaruio"><input type="radio" name="genero" value="Masculino" id="generoUsuaruio">Masculino</label>
+                    <label for="generoUsuaruio"><input type="radio" name="genero" value="feminino" id="generoUsuaruio">Feminino</label>
+                </div>
+
+                <div class="campo">
+                    <label for="estadoUsuario">Estado:</label>
+                    <select name="estado" id="estadoUsuario">
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="PR">Parana</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="novidadesUsuario">Deseja receber noticias:</label>
+                    <input type="checkbox" name="novidades" id="novidadesUsuario">
+                </div>
+
+                <div class="campo">
+                    <label for="comentariosUsuario">Deixe seu comentario:</label>
+                    <textarea name="comentario" id="comentariosUsuario" rows="4" cols="30"></textarea>
+                </div>
+
+                <div class="campoEnviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+             
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
