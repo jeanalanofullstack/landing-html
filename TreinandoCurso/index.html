@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://t4.ftcdn.net/jpg/06/95/51/27/240_F_695512771_8Tf6sDn5Fdsl5dKPyf2y8VN7Ej0lX7lr.jpg");
+            background-repeat: no-repeat;
+            background-size: 300px;
+            height: 97vh;
+            background-position: left bottom;  
+            transition: background-position 0.7s ease;
+        }
+        .botoes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .botoes button{
+            font-size: 14pt;
+            padding: 15px;
+            margin: 10px;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        .botoes button:hover{
+            transform: scale(1.1);
+            background-color: #77aae1;
+        }
+    </style>
+</head>
+<body>
+    <div class="botoes">
+        <button class="subir">Subir</button>
+        <button class="esquerda">Esquerda</button>
+        <button class="direita">Direita</button>
+        <button class="descer">Descer</button>
+    </div>
+
+    <script>
+        //capturando as variaveis
+        const fundoMovel = document.querySelector("body");
+        const botoes = {
+            subir: document.querySelector(".subir"),
+            esquerda: document.querySelector(".esquerda"),
+            direita: document.querySelector(".direita"),
+            descer: document.querySelector(".descer")
+        }
+
+        //eventos dos botoes
+        botoes.subir.addEventListener("click", () =>{
+            fundoMovel.style.backgroundPosition = "top center"
+        })
+        botoes.esquerda.addEventListener("click", () =>{
+            fundoMovel.style.backgroundPosition = "left center"
+        })
+        botoes.direita.addEventListener("click", () =>{
+            fundoMovel.style.backgroundPosition = "right center"
+        })
+        botoes.descer.addEventListener("click", () =>{
+            fundoMovel.style.backgroundPosition = "center bottom"
+        })
+    </script>
+</body>
+</html>
