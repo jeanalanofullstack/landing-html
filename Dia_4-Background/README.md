@@ -5,3 +5,6 @@ Acabou virando mais que um simples teste — saiu um layout com menu lateral, co
 
 Este foi a linha:
 background: black url(img/montanha.jpg) center center no-repeat fixed;
+
+link de para visualizar: 
+https://jeanalanofullstack.github.io/landing-html/Dia_4-Background
