@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px 20px;
+        }
+        td:nth-child(even){
+            background-color: aqua;
+        }
+        tr:nth-child(odd){
+            background-color: burlywood;
+        }
+        tr:last-child {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <caption>Vencendo a vida</caption>
+            <tr>
+                <th colspan="4">Tabela de dores</th>
+            </tr>
+            <tr>
+                <td>A1</td>
+                <td>A2</td>
+                <td>A3</td>
+                <td rowspan="2">A4</td>
+            </tr>
+            <tr> 
+                <td>B1</td>
+                <td>B2</td>
+                <td>B3</td>
+                
+            </tr>
+            <tr>
+                <td>C1</td>
+                <td>C2</td>
+                <td>C3</td>
+                <td>C4</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
